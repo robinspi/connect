@@ -1,0 +1,122 @@
+:root {
+  --background-text-color: #80704e94;
+
+  --connect-card-height: 400px;
+  --connect-card-width: calc(1.8 * var(--connect-card-height));
+  --connect-card-rounding: 10px;
+  --connect-card-color: rgb(250, 245, 238);
+  --connect-card-padding: 20px;
+
+  --connect-card-left-background-color: rgb(214, 28, 90);
+  --connect-card-left-text-color: white;
+  --connect-card-right-background-color: none;
+  --connect-card-right-text-color: rgb(214, 28, 90);
+}
+
+.yellowed-text-bg {
+  color: var(--background-text-color);
+  filter: blur(5px);
+  line-height: 8vh;
+  font-size: 4vh;
+  user-select: none;
+}
+
+#connect-card {
+  position: fixed; 
+  height: var(--connect-card-height);
+  width: var(--connect-card-width);
+  top: calc(50% - var(--connect-card-height) / 2);
+  right: calc(50% - var(--connect-card-width) / 2);
+  border-radius: var(--connect-card-rounding);
+  display: flex;
+
+  background-color: var(--connect-card-color);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18pt;
+  box-shadow: 20px 20px 30px 20px rgba(82, 74, 54, 0.67);
+}
+
+#connect-card-left, #connect-card-right {
+  display: flex;
+  flex-direction: column;
+}
+
+#connect-card-left {
+  align-items: flex-end;
+  width: 33%;
+  border-right: 1px solid var(--connect-card-left-text-color);
+  padding: var(--connect-card-padding);
+  border-top-left-radius: var(--connect-card-rounding);
+  border-bottom-left-radius: var(--connect-card-rounding);
+
+  background-color: var(--connect-card-left-background-color);
+  color: var(--connect-card-left-text-color);
+  background: rgb(15,24,116);
+background: linear-gradient(0deg, rgba(15,24,116,1) 0%, rgba(180,10,76,1) 100%);
+}
+
+#connect-card-left a {
+  color: var(--connect-card-left-text-color) !important;
+  text-decoration: none;
+  width: 100%;
+}
+
+#connect-card-right {
+  width: 66%;
+  border-top-right-radius: var(--connect-card-rounding);
+  border-bottom-right-radius: var(--connect-card-rounding);
+
+  padding: var(--connect-card-padding);
+  background-color: var(--connect-card-right-background-color);
+  color: var(--connect-card-right-text-color);
+}
+
+.connect-card-name {
+  font-size: 52pt;
+  padding: 5px 0px 28px 0px;
+}
+
+.social-icon{
+  padding: 8px 8px 8px 20px;
+  height: 42px;
+  width: 42px;
+}
+
+.social-label {
+  font-weight: normal;
+  letter-spacing: 1px;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.social-label:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+  padding: 14px 10px 4px 10px;
+  font-style: italic;
+  font-size: 20pt;
+}
+
+.grad-stop-1 { color: rgb(165, 13, 89); }
+.grad-stop-2 { color: rgb(122, 17, 100); }
+.grad-stop-3 { color: rgb(94, 20, 109); }
+.grad-stop-4 { color: rgb(77, 21, 114); }
+.grad-stop-5 { color: rgb(56, 22, 117); }
+.grad-stop-6 { color: rgb(38, 25, 121); }
+
+.blurb {
+  padding: 0px 10px 0px 10px;
+  line-height: 41px;
+  font-weight: normal;
+}
